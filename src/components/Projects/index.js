@@ -1,41 +1,46 @@
 import React from 'react'
-import Icon1 from "../../images/Simply-Math.PNG"
-import Icon2 from "../../images/petsharing-demo.png"
-import Icon3 from "../../images/BudgetManager.PNG"
+import Icon1 from '../../images/Simply-Math.PNG'
+import Icon2 from '../../images/petsharing-demo.png'
+import Icon3 from '../../images/Budget Manager.PNG'
+import {ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsIcon, ProjectsH2, ProjectsP} from './ProjectsElements'
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
-import {
-    ProjectsContainer,
-    ProjectsH1,
-    ProjectsH2,
-    ProjectsP,
-    ProjectsWrapper,
-    ProjectsCard,
-    ProjectsIcon,
-} from "./ProjectsElements"
 
-function Projects() {
+
+const Projects = () => {
   return (
-    <ProjectsContainer id="projects">
-        <ProjectsH1>My Projects</ProjectsH1>
-            <ProjectsWrapper>
-                <ProjectsCard>
-                    <ProjectsIcon src={Icon1}/>
-                    <ProjectsH2>Simply Math</ProjectsH2>
-                    <ProjectsP>Simple Game Built with</ProjectsP>
-                </ProjectsCard>
-
-                <ProjectsCard>
-                    <ProjectsIcon src={Icon2}/>
-                    <ProjectsH2>Pet Sharing</ProjectsH2>
-                    <ProjectsP>CRUD App built with</ProjectsP>
-                </ProjectsCard>
-
-                <ProjectsCard>
-                    <ProjectsIcon src={Icon3}/>
-                    <ProjectsH2>Budget Manager</ProjectsH2>
-                    <ProjectsP>MERN Application bilt with</ProjectsP>
-                </ProjectsCard>
-            </ProjectsWrapper>
+    <ProjectsContainer id='projects'>
+      <ProjectsH1>Projects</ProjectsH1>
+      <ProjectsWrapper>
+        <ProjectsCard>
+          <ProjectsIcon src={Icon1}/>
+          <ProjectsH2>Simply-Math</ProjectsH2>
+          <ProjectsP>This math game is built with JavaScript, HTML, and CSS. It is an endless game in which the player can solve math equations. If clicked the wrong answer the player can try again or start over.</ProjectsP>
+          <Stack direction="row" spacing={10}>
+      <Button variant="outlined" size="large"  sx={{ color: 'pink'[500] }} href="https://alex-wd-22.github.io/Simply-Math/">Demo</Button>
+      <Button variant="outlined" size="large"  href="https://github.com/Alex-WD-22/Simply-Math">GitHub</Button>
+    </Stack>
+        </ProjectsCard>
+        <ProjectsCard>
+        <ProjectsIcon src={Icon2}/>
+          <ProjectsH2>Pet-Sharing</ProjectsH2>
+          <ProjectsP>This application has CRUD functionality for pets and users. It was built with Express.js and Handelbars.js. Additionally, it has authentication with session storage and password encryption using bcrypt package.</ProjectsP>
+          <Stack direction="row" spacing={10}>
+      <Button variant="outlined" size="large" href="https://pet-sharing.herokuapp.com/">Demo</Button>
+      <Button variant="outlined" size="large"  href="https://github.com/FreiburgDevTeam/crud-project">GitHub</Button>
+    </Stack>
+        </ProjectsCard>
+        <ProjectsCard>
+          <ProjectsIcon src={Icon3}/>
+          <ProjectsH2>Budget-Manager</ProjectsH2>
+          <ProjectsP>This MERN application is all about finances. The current balance is always displayed as well as a chart to see a trend in expenses/income. Build with Rest API, Chart.js, and Material-UI.</ProjectsP>
+          <Stack direction="row" spacing={10}>
+      <Button variant="outlined" size="large" href="https://budget-manager-mern-app.netlify.app/">Demo</Button>
+      <Button variant="outlined" size="large"  href="https://github.com/FreiburgDevTeam/mern-application-client">GitHub</Button>
+    </Stack>
+        </ProjectsCard>
+      </ProjectsWrapper>
     </ProjectsContainer>
   )
 }

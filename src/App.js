@@ -1,16 +1,16 @@
-
 import './App.css';
-
-// import { ErrorPage } from './components/ErrorPage';
-
-import {BrowserRouter as Router} from 'react-router-dom';
-import Home from './components/pages';
+import {BrowserRouter as Router, Route, Routes } from  'react-router-dom'
+import Home from './pages';
+import ErrorPage from './components/ErrorPage';
 
 
 function App() {
   return (
     <Router>
-      <Home />
+    <Routes>
+        <Route path="/" element={ <Home />}></Route> 
+        <Route path="*" element={ <ErrorPage />}></Route> 
+    </Routes>
     </Router>
   );
 }

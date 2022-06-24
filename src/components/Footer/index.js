@@ -1,39 +1,33 @@
 import React from 'react'
-import {animateScroll as scroll} from "react-scroll"
-import {
-    FooterContainer,
-    FooterWrap,
-    FooterLinksContainer,
-    FooterLinksWrapper,
-    FooterLinkItems,
-    FooterLink,
-    FooterLinkTitle,
-    WebsiteRights
-    
-} from "./FooterElements"
+import { FaGithub, FaLinkedin, } from 'react-icons/fa'
+import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
+import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
-
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
 
   return (
     <FooterContainer>
-        <FooterWrap>
-            <FooterLinksContainer>
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle></FooterLinkTitle>
-                            <FooterLink to="/">Go to Top</FooterLink>
-                            <FooterLink to="about">About</FooterLink>
-                            <FooterLink to="projects">Projects</FooterLink>
-                            <FooterLink to="contact">Contact</FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
-            </FooterLinksContainer>
-            <WebsiteRights onClick={toggleHome} to="/">Alexander Nerz © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
-        </FooterWrap>
+      <FooterWrap>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to='/' onClick={toggleHome}>
+              Alexander Nerz
+            </SocialLogo>
+            <WebsiteRights>Alexander Nerz © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+            <SocialIcons>
+              <SocialIconLink href='https://github.com/Alex-WD-22/alexandernerz' target='_blank' arial-label='GitHub'>
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink href='https://www.linkedin.com/in/alexander-nerz' target='_blank' arial-label='Linkedin'>
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
+      </FooterWrap>
     </FooterContainer>
   )
 }
