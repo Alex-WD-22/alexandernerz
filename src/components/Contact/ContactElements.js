@@ -60,7 +60,7 @@ export const ContactH1 = styled.h1`
 export const ContactP = styled.p`
   margin-top: 24px;
   color: #000;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   max-width: 600px;
 

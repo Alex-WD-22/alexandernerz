@@ -1,7 +1,10 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, } from 'react-icons/fa'
-import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
+import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights, Img } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll';
+import Logo from "../../images/34-code-solid.png"
+
+
 
 const Footer = () => {
   const toggleHome = () => {
@@ -13,10 +16,11 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
+          
             <SocialLogo to='/' onClick={toggleHome}>
-              Alexander Nerz
+            <Img src={Logo}></Img>
             </SocialLogo>
-            <WebsiteRights>Alexander Nerz © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+            <WebsiteRights> Alexander Nerz © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='https://github.com/Alex-WD-22/alexandernerz' target='_blank' arial-label='GitHub'>
                 <FaGithub />
@@ -25,6 +29,7 @@ const Footer = () => {
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
+          
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>

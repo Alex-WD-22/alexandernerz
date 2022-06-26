@@ -47,7 +47,7 @@ export const ProjectsCard = styled.div`
   padding:  20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
-  ${'' /* border: 1px solid black; */}
+  
 
   &:hover {
     transform: scale(1.02);
@@ -63,7 +63,7 @@ export const ProjectsIcon = styled.img`
   height: auto;
   width: 80%;
   margin-bottom: 15px;
-  border: 1px solid black;
+  border: 1px solid #3080e8;
   border-radius: 1%;
 `
 export const ProjectsH1 = styled.h1`

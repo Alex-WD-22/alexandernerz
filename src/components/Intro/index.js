@@ -1,7 +1,7 @@
 
 import { IntroContainer, IntroContent, IntroH1, IntroP,} from './IntroElements'
 import { motion } from "framer-motion"
-
+import React from 'react';
 const Intro = () => {
 
 
