@@ -50,9 +50,7 @@ const Navbar = ({ toggle }) => {
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >Contact</NavLinks>
             </NavItem>
-       
           </NavMenu>
-  
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>
