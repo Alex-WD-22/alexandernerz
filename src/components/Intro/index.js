@@ -1,6 +1,6 @@
 
 import { IntroContainer, IntroContent, IntroH1, IntroP,} from './IntroElements'
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import React from 'react';
 const Intro = () => {
 
@@ -9,16 +9,16 @@ const Intro = () => {
     <IntroContainer id='Intro'>
 
       <IntroContent>
-      <motion.div
+      {/* <motion.div
     animate={{ x: [-400, 0] }}
-    transition={{ duration: 1 }}>
+    transition={{ duration: 1 }}> */}
         <IntroH1 id='name'> Alexander Nerz</IntroH1>
-        </motion.div>
+        {/* </motion.div>
         <motion.div
     animate={{ x: [400, 0] }}
-    transition={{ duration: 1 }}>
+    transition={{ duration: 1 }}> */}
         <IntroP>Full Stack Developer</IntroP>
-        </motion.div>
+        {/* </motion.div> */}
       </IntroContent>
     </IntroContainer>
   )

@@ -36,4 +36,4 @@ const Info = ({lightBg, id, imgStart, topLine, darkText, description1, descripti
   )
 }
 
-export default Info
+export default Info;

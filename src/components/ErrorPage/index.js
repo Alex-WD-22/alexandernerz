@@ -1,5 +1,5 @@
 import { ErrorContainer, ErrorContent, ErrorH1, ErrorP} from './ErrorPageElements'
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import React from 'react';
 import { Button, Stack } from '@mui/material';
@@ -11,21 +11,21 @@ const ErrorPage = () => {
     <ErrorContainer id='Error'>
 
     <ErrorContent>
-    <motion.div
+    {/* <motion.div
   animate={{ x: [-800, 0] }}
-  transition={{ duration: 1 }}>
+  transition={{ duration: 1 }}> */}
       <ErrorH1 id='error'> 404</ErrorH1>
-      </motion.div>
+      {/* </motion.div>
       <motion.div
   animate={{ x: [800, 0] }}
-  transition={{ duration: 1 }}>
+  transition={{ duration: 1 }}> */}
       <ErrorP>We are sorry, but the page you requestet was not found.</ErrorP>
       <Stack alignItems="center">
       <Button component={Link} to="/" variant="outlined" startIcon={<ArrowBackIcon />}>
       Go Back
       </Button>
       </Stack>
-      </motion.div>
+      {/* </motion.div> */}
     </ErrorContent>
   </ErrorContainer>
   )
