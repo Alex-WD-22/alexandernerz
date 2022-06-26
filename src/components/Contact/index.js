@@ -3,8 +3,6 @@ import { ContactContainer, ContactContent, ContactH1, ContactP} from './ContactE
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Stack from '@mui/material/Stack';
-import { Link } from 'react-router-dom';
-import Mail from "../../video/SolidMail1.mp4"
 import React from 'react';
 
 const Contact = () => {
@@ -27,7 +25,7 @@ const Contact = () => {
     <MailOutlineIcon 
         
         style={{ ...hoveredStyle, ...iconColor }} sx={{ fontSize: 60 }}
-        to='javascript:void(0)'
+        to='e.prevent.Default()'
         onClick={() => window.location = 'mailto:alexander.nerz@web.de'}> </MailOutlineIcon> <br />
         <ContactP></ContactP>
     <a href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon style={{ color: "#3080e8" }} sx={{ fontSize: 60 }} /></a>
