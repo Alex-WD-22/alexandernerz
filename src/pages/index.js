@@ -3,7 +3,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import { homeObjOne} from '../components/About/Data';
 import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar'
 import Intro from '../components/Intro';
 import Projects from '../components/Projects';
 import About from "../components/About";
@@ -30,4 +30,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
