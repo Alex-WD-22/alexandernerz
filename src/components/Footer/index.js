@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin, } from 'react-icons/fa'
 import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights, Img } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll';
-import Logo from "../../images/34-code-solid.png"
+import Logo from "../../images/LogoWhite.png"
 
 
 
