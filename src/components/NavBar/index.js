@@ -5,7 +5,7 @@ import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, 
 import { animateScroll as scroll } from 'react-scroll';
 import Logo3 from "../../images/Logo3.png"
 
-const Navbar = ({ toggle }) => {
+const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
   const changeNav = () => {
     if(window.scrollY >= 80) {
@@ -58,5 +58,5 @@ const Navbar = ({ toggle }) => {
   )
 }
 
-export default Navbar;
+export default NavBar;
 
