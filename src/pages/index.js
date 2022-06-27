@@ -5,8 +5,8 @@ import { homeObjOne} from '../components/About/Data';
 import Intro from '../components/Intro';
 import Projects from '../components/Projects';
 import About from "../components/About";
-import Navbar from '../components/Navbar/index';
-import Sidebar from '../components/Sidebar/index';
+import Navbar from '../components/Navbar/index.js';
+import Sidebar from '../components/Sidebar/index.js';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
