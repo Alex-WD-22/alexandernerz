@@ -4,11 +4,12 @@ import {IconContext} from 'react-icons/lib'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, Img} from './NavbarElements'
 import { animateScroll as scroll } from 'react-scroll';
 import Logo3 from "../../images/LogoWhite.png"
+import { motion } from "framer-motion"
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
   const changeNav = () => {
-    if(window.scrollY >= 80) {
+    if (window.scrollY >= 80) {
       setScrollNav(true)
     } else {
       setScrollNav(false)
@@ -25,35 +26,55 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-    <IconContext.Provider value={{ color: '#000'}}>
-      <Nav scrollNav={scrollNav}>
-        <NavbarContainer>
-          <NavLogo to='/' onClick={toggleHome}>
-          <Img src={Logo3}>
-          </Img></NavLogo>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
-          <NavMenu>
-            <NavItem>
-              <NavLinks to='about'
-              smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >About</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='projects'
-              smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >Projects</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to='contact'
-              smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >Contact</NavLinks>
-            </NavItem>
-          </NavMenu>
-        </NavbarContainer>
-      </Nav>
-    </IconContext.Provider>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <Nav scrollNav={scrollNav}>
+          <NavbarContainer>
+            <motion.div
+              animate={{ y: [-200, 6] }}
+              transition={{ duration: 4 }}>
+              <NavLogo to='/' onClick={toggleHome}>
+                <Img src={Logo3} />
+              </NavLogo>
+            </motion.div>
+            <motion.div
+              animate={{ y: [-200, 6] }}
+              transition={{ duration: 3 }}>
+              <MobileIcon onClick={toggle}>
+                <FaBars />
+              </MobileIcon>
+            </motion.div>
+            <NavMenu>
+              <NavItem>
+                <motion.div
+                  animate={{ y: [-200, 30] }}
+                  transition={{ duration: 3 }}>
+                  <NavLinks to='about'
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  >About</NavLinks>
+                </motion.div>
+              </NavItem>
+              <NavItem>
+                <motion.div
+                  animate={{ y: [-200, 30] }}
+                  transition={{ duration: 3 }}>
+                  <NavLinks to='projects'
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  >Projects</NavLinks>
+                </motion.div>
+              </NavItem>
+              <NavItem>
+                <motion.div
+                  animate={{ y: [-200, 30] }}
+                  transition={{ duration: 3 }}>
+                  <NavLinks to='contact'
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  >Contact</NavLinks>
+                </motion.div>
+              </NavItem>
+            </NavMenu>
+          </NavbarContainer>
+        </Nav>
+      </IconContext.Provider>
     </>
   )
 }

@@ -4,8 +4,6 @@ import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, S
 import { animateScroll as scroll } from 'react-scroll';
 import Logo from "../../images/LogoWhite.png"
 
-
-
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -16,9 +14,8 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-          
             <SocialLogo to='/' onClick={toggleHome}>
-            <Img src={Logo}></Img>
+              <Img src={Logo}></Img>
             </SocialLogo>
             <WebsiteRights> Alexander Nerz © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             <SocialIcons>
@@ -29,7 +26,6 @@ const Footer = () => {
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
-          
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>

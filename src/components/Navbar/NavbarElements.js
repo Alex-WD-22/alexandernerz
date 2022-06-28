@@ -3,8 +3,7 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-  
-  background: ${({scrollNav}) => (scrollNav ? '#3080e8' : '#3080e8')};
+  background: #3080e8;
   height: 80px;
   margin-top: -80px;
   display:flex;
@@ -14,14 +13,12 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-
-
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-`
-
+`;
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -30,7 +27,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-`
+`;
 export const NavLogo = styled(LinkR) `
   color:#000;
   justify-self: flex-start;
@@ -41,17 +38,13 @@ export const NavLogo = styled(LinkR) `
   margin-left: 24px;
   text-decoration: none;
 
-  &:hover {
-    color: blue;
-  }
-
 @media screen and (max-width: 768px) {
   font-size: 20px;
 }
 @media screen and (max-width: 480px) {
   font-size: 18px;
 }
-`
+`;
 export const MobileIcon = styled.div`
   display: none;
   
@@ -65,7 +58,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
   } 
-`
+`;
 export const NavMenu = styled.ul`
   display:flex;
   justify-content: center;
@@ -76,10 +69,10 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 export const NavItem = styled.li`
   height: 80px;
-`
+`;
 export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
@@ -91,10 +84,12 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     color: #000;
-    font-weight: bold;
+    font-weight: bolder;
+    text-shadow: 1px 0px 20px #fff;
+    
   }
-`
+`;
 export const Img = styled.img`
-    width: 15%;
+    width: 70px;
     height: auto;
-`
+`;
