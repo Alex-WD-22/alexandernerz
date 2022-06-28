@@ -16,7 +16,7 @@ const Projects = () => {
         <ProjectsCard>
           <ProjectsIcon src={Icon1}/>
           <ProjectsH2>Simply-Math</ProjectsH2>
-          <ProjectsP>This math game is built with JavaScript, HTML, and CSS. It is an endless game in which the player can solve math equations. If clicked the wrong answer the player can try again or start over.</ProjectsP>
+          <ProjectsP>This math game is built with JavaScript, HTML, and CSS. It is an endless game in which the player can solve math equations. If the player clicked the wrong answer they can try again or start over.</ProjectsP>
           <Stack direction="row" spacing={10}>
       <Button variant="outlined" size="large"  sx={{ color: 'pink'[500] }} href="https://alex-wd-22.github.io/Simply-Math/">Demo</Button>
       <Button variant="outlined" size="large"  href="https://github.com/Alex-WD-22/Simply-Math">GitHub</Button>
@@ -25,7 +25,7 @@ const Projects = () => {
         <ProjectsCard>
         <ProjectsIcon src={Icon2}/>
           <ProjectsH2>Pet-Sharing</ProjectsH2>
-          <ProjectsP>This application has CRUD functionality for pets and users. It was built with Express.js and Handelbars.js. Additionally, it has authentication with session storage and password encryption using bcrypt package.</ProjectsP>
+          <ProjectsP>This application has CRUD functionality for pets and users. It was build with Express.js and Handlebars.js. Additionally, it has authentication with session storage and password encryption using bcrypt package.</ProjectsP>
           <Stack direction="row" spacing={10}>
       <Button variant="outlined" size="large" href="https://pet-sharing.herokuapp.com/">Demo</Button>
       <Button variant="outlined" size="large"  href="https://github.com/FreiburgDevTeam/crud-project">GitHub</Button>
