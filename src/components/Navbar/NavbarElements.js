@@ -90,6 +90,7 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 export const Img = styled.img`
-    width: 70px;
+    width: 55px;
     height: auto;
+    margin-top: 8px;
 `;

@@ -8,14 +8,6 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   background: #fff;
   padding: 5px;
-
-  @media screen and (max-width: 768px) {
-    height: 100%;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 100%;
-  }
  `;
 export const ProjectsWrapper = styled.div`
     max-width: 100%;
@@ -56,18 +48,14 @@ export const ProjectsIcon = styled.img`
   height: auto;
   width: 80%;
   margin-bottom: 15px;
-  border: 1px solid #3080e8;
+  border: 2px solid #3080e8;
   border-radius: 1%;
 `;
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
   color: #000;
-  margin-bottom: 30px;
-  margin-top: 160px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
-  }  
+  margin-bottom: 64px;
+  margin-top: 125px; 
 `;
 export const ProjectsH2 = styled.h2`
   font-size: 1rem;

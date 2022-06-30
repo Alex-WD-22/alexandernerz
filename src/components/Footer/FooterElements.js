@@ -95,7 +95,8 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
 `;
 export const Img = styled.img`
-  width: 30px;
+  width: 55px;
   height: auto;
   background-color: #3080e8;
+  margin-top: 5px;
 `;
