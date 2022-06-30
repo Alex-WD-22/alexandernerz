@@ -4,7 +4,7 @@ Hi :wave:,
 
 and Welcome to my Portfolio source code.
 
-[Portfolio img](../alexandernerz/src/images/Portfolio-img.png).
+[Portfolio img](Portfolio-img.png).
 
 ## About Me
 
