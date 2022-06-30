@@ -4,7 +4,7 @@ Hi :wave:,
 
 and Welcome to my Portfolio source code.
 
-![Portfolio img](./src/images/Portfolio-img.png).
+![Portfolio img](./src/images/Portfolio-img.png)
 
 ## About Me
 
@@ -19,7 +19,7 @@ If I'm not in front of my computer, you most likely will find me climbing or rid
 - HTML
 - CSS
 
-### dependencies
+### Dependencies
 
 - Material UI
 - Framer-Motion
@@ -41,4 +41,4 @@ Deployed on [Netlify](https://app.netlify.com/)
 
 ### Thank you
 
- for taking the time to check out my Portfolio :heart: 
+ for taking the time to check out my portfolio :heart: 
