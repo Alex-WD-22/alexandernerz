@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
-  
-  @media screen and  (max-width: 768px) {
-    padding: 100px 0;
-  }
+
 `;
 export const InfoWrapper = styled.div`
   display: grid;
@@ -40,20 +37,28 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: px;
 `;
 export const TopLine = styled.p`
   font-size: 2.5rem;
   color: #000;
   margin-bottom: 64px;
   font-weight: bold;
+  
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 export const Subtitle  = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
+  max-width: auto;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
   color: #000;
+  
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 export const BtnWrap = styled.div`
   display:flex;
