@@ -29,7 +29,6 @@ export const IntroH1 = styled.h1`
   }
   @media screen and (max-width: 480px) {
     font-size: 100px
-    
   }
 `;
 export const IntroP = styled.p`
