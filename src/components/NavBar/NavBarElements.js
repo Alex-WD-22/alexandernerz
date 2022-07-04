@@ -85,7 +85,6 @@ export const NavLinks = styled(LinkS)`
   &.active {
     color: #000;
     font-weight: bolder;
-    text-shadow: 1px 0px 20px #fff;
   }
 `;
 export const Img = styled.img`
