@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
- background: linear-gradient(0deg, rgba(160, 177, 175, 0.747) 0%, rgb(255, 255, 255) 100%);
+ background: linear-gradient(0deg, rgba(185, 194, 193, 0.747) 0%, rgb(255, 255, 255) 100%);
 `;
 export const InfoWrapper = styled.div`
   display: grid;

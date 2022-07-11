@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-  background: white;
-  display: flex;
+  background: linear-gradient(0deg,#3080e886, #fff);
+  background-size: 200% 200%;
+  display: flex; 
   justify-content: center;
   align-items: center;
   padding: 0 30px;

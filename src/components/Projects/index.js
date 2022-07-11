@@ -38,8 +38,10 @@ const Projects = () => {
             <Button variant="outlined" size="large" href="https://github.com/FreiburgDevTeam/mern-application-client">GitHub</Button>
           </Stack>
         </ProjectsCard>
+        <br/>
       </ProjectsWrapper>
     </ProjectsContainer>
+
   )
 }
 

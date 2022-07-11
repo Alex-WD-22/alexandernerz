@@ -6,8 +6,7 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  padding: 5px;
+  background: linear-gradient(180deg, rgba(185, 194, 193, 0.747) 0%, rgb(255, 255, 255) 100%);
  `;
 export const ProjectsWrapper = styled.div`
     max-width: 100%;
@@ -35,7 +34,8 @@ export const ProjectsCard = styled.div`
   align-items: center;
   border-radius: 5%;
   max-height: 520px;
-  padding:  20px;
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
   
