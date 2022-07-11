@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const IntroContainer = styled.div`
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;

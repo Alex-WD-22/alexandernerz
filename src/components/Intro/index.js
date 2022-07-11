@@ -6,7 +6,7 @@ import React from 'react';
 const Intro = () => {
 
   return (
-    <IntroContainer id='Intro'>
+    <IntroContainer id='Intro' className='gradient'>
       <IntroContent>
         <motion.div
           animate={{ x: [-600, 0] }}

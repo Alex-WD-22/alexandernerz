@@ -4,7 +4,7 @@ import React from 'react';
 const Info = ({ id, imgStart, topLine, description1, description2, description3, alt, img }) => {
   return (
     <>
-      <InfoContainer id={id}>
+      <InfoContainer id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
