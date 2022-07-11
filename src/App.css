@@ -10,16 +10,15 @@
 }
 .gradient
 {
-    height:auto;
-    width:auto;
-    background: linear-gradient(0deg,#0bce1bc2, #fff, #3080e8);
-    background-size: 200% 200%;
+  height:auto;
+  width:auto;
+  background: linear-gradient(0deg,#3080e898, #fff, #3080e8d8);
+  background-size: 200% 200%;
 
-    -webkit-animation: Animation 4s ease;
-    -moz-animation: Animation 4s ease;
-    animation: Animation 4s ease;
+  -webkit-animation: Animation 4s ease;
+  -moz-animation: Animation 4s ease;
+  animation: Animation 4s ease;
 }
-
 @-webkit-keyframes Animation {
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}

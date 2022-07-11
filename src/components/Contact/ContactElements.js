@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-  background: linear-gradient(0deg,#3080e886, #fff);
+  background: linear-gradient( 0deg, #3080e886, #fff );
   background-size: 200% 200%;
   display: flex; 
   justify-content: center;
