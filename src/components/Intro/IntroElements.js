@@ -19,15 +19,14 @@ export const IntroContent = styled.div`
   align-items: center;
 `;
 export const IntroH1 = styled.h1`
-  color: black;
-  font-size: 200px;
+  font-size: 120px;
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 150px
+    font-size: 100px
   }
   @media screen and (max-width: 480px) {
-    font-size: 100px
+    font-size: 60px
   }
 `;
 export const IntroP = styled.p`

@@ -32,16 +32,21 @@ export const ProjectsCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5%;
   max-height: 520px;
   padding: 20px;
   margin: 0px 10px 0px 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  transition: all 0.3s ease-in-out;
-  
+  transform:
+    perspective(750px)
+    translate3d(0px, 0px, -100px)
+    rotateX(7deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+
   &:hover {
-    transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
+    transform: translate3d(0px, 0px, -250px);
   }
 `;
 export const ProjectsIcon = styled.img`

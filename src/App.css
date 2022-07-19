@@ -4,15 +4,16 @@
   padding: 0;
   font-family: 'Encode Sans Expanded', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 #name {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Bree Serif', serif;
+
 }
 .gradient
 {
   height:auto;
   width:auto;
-  background: linear-gradient(0deg,#3080e898, #fff, #3080e8d8);
+  background: linear-gradient(0deg,#3080e898, #fff, #3f83db60);
   background-size: 200% 200%;
 
   -webkit-animation: Animation 4s ease;
@@ -33,4 +34,23 @@
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}
     100%{background-position:10% 0%}
+}
+.underline-hover {
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+
+.underline-hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.25s ease-out;
+}
+.underline-hover:hover::before {
+  width: 100%;
 }

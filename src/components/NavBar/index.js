@@ -48,7 +48,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 3 }}>
-                  <NavLinks to='about'
+                  <NavLinks to='about' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >About</NavLinks>
                 </motion.div>
@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 3 }}>
-                  <NavLinks to='projects'
+                  <NavLinks to='projects' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >Projects</NavLinks>
                 </motion.div>
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 3 }}>
-                  <NavLinks to='contact'
+                  <NavLinks to='contact' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >Contact</NavLinks>
                 </motion.div>
