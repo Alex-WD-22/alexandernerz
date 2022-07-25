@@ -52,7 +52,7 @@ export const TopLine = styled.p`
 export const Subtitle  = styled.p`
   max-width: auto;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 24px;
   color: #000;
   
@@ -73,5 +73,5 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
   border-radius: 50%;
-  border: 3px solid #3080e8;
+  border: 2px solid #3080e8;
 `;
