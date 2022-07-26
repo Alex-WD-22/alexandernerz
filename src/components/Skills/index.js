@@ -17,27 +17,26 @@ const backEnd = [
     { value: 'Express.js', count: 25 },
 ]
 
-    const SimpleCloud = () => {
-        <TagCloud
-          minSize={12}
-          maxSize={35}
-          tags={[frontEnd, backEnd]}
-          onClick={tag => alert(`'${tag.value}' was selected!`)}
-        />
-      
+const SimpleCloud = () => {
+    <TagCloud
+        minSize={12}
+        maxSize={35}
+        tags={[frontEnd, backEnd]}
+        onClick={tag => alert(`'${tag.value}' was selected!`)}
+    />
+
 
     return (
-        
         <SkillsContainer id='skills'>
-        <SkillsContent>
-        <SkillsH1>Technologies & Tools</SkillsH1>
-        <SkillsH2>Front-End:</SkillsH2>
-        <TagCloud minSize={39} maxSize={66} tags={frontEnd} randomSeed={42} />
-        <SkillsH2>Back-End:</SkillsH2>
-        <TagCloud minSize={39} maxSize={66} tags={backEnd} randomSeed={42} />
-        </SkillsContent>
-      </SkillsContainer>
-    
+            <SkillsContent>
+                <SkillsH1>Technologies & Tools</SkillsH1>
+                <SkillsH2>Front-End:</SkillsH2>
+                <TagCloud minSize={39} maxSize={66} tags={frontEnd} randomSeed={42} />
+                <SkillsH2>Back-End:</SkillsH2>
+                <TagCloud minSize={39} maxSize={66} tags={backEnd} randomSeed={42} />
+            </SkillsContent>
+        </SkillsContainer>
+
     )
 
 }

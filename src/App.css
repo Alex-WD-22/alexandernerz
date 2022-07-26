@@ -8,8 +8,6 @@
 #name {
   font-family: 'Bree Serif', serif;
   color: #3080e8;
-  
-
 }
 .gradient
 {
@@ -40,5 +38,4 @@
 }
 .underline-hover:hover::before {
   width: 100%;
-  
 }

@@ -9,6 +9,7 @@ export const ProjectsContainer = styled.div`
   ${'' /* background: linear-gradient(180deg, rgba(185, 194, 193, 0.747) 0%, rgb(255, 255, 255) 100%); */}
  `;
 export const ProjectsWrapper = styled.div`
+    height: 860px;
     max-width: 100%;
     margin: 0 auto;
     display: grid;
@@ -24,6 +25,7 @@ export const ProjectsWrapper = styled.div`
     @media screen and (max-width: 786px) {
       grid-template-columns: 1fr;
       padding: 0 20px;
+      height: 100%;
   }
 `;
 export const ProjectsCard = styled.div`
@@ -32,9 +34,9 @@ export const ProjectsCard = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 520px;
+  max-height: auto;
   padding: 20px;
-  margin: 0px 10px 15px 10px;
+  margin: 0px 10px 30px 10px;
   transform:
     perspective(750px)
     translate3d(0px, 0px, -100px)
@@ -51,7 +53,7 @@ export const ProjectsCard = styled.div`
 `;
 export const ProjectsIcon = styled.img`
   height: auto;
-  width: 80%;
+  width: 90%;
   margin-bottom: 15px;
   border: 2px solid #3080e8;
   border-radius: 1%;
@@ -59,15 +61,15 @@ export const ProjectsIcon = styled.img`
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
   color: #000;
-  margin-bottom: 64px;
-  margin-top: 125px; 
+  margin-bottom: 22px;
+  margin-top: 49px; 
 `;
 export const ProjectsH2 = styled.h2`
-  font-size: 1rem;
+  font-size: 34px;
   margin-bottom: 15px;
 `;
 export const ProjectsP = styled.p`
-  font-size: 1rem;
+  font-size: 26px;
   text-align: start;
   width: 80%;
   margin-bottom: 15px;

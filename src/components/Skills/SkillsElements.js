@@ -7,7 +7,7 @@ export const SkillsContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 1200px;
+  height: 860px;
   position: relative;
   z-index: 1;
 `;
@@ -19,7 +19,6 @@ export const SkillsContent = styled.div`
   flex-direction: column;
   align-items: center;
   
-
   @media screen and (max-width: 768px) {
     height: 500px;
     width: 520px;
@@ -29,7 +28,7 @@ export const SkillsContent = styled.div`
     width: 460px;
   }
   @media screen and (max-width: 480px) {
-    height: 520px;
+    height: 100%;
     width: 300px;
   }
 `;
@@ -42,7 +41,7 @@ export const SkillsH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 37px;
   }
-`
+  `
 export const SkillsH2 = styled.h2`
     font-size: 45pxpx;
     color: #000;
