@@ -85,12 +85,9 @@ export const NavLinks = styled(LinkS)`
   &.active {
     color: #000;
     font-weight: bolder;
+    ${'' /* border: 1px solid #333;
+    border-radius: 10%; */}
   }
-
-  ${'' /* &:hover {
-    text-decoration: underline;
-    
-  } */}
 `;
 export const Img = styled.img`
     width: 55px;

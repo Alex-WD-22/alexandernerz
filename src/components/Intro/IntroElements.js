@@ -11,7 +11,7 @@ export const IntroContainer = styled.div`
 `;
 export const IntroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: auto;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -29,6 +29,12 @@ export const IntroH1 = styled.h1`
     font-size: 60px
   }
 `;
+export const IntroH2 = styled.h2`
+  margin-top: 24px;
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+`
 export const IntroP = styled.p`
   margin-top: 24px;
   color: #000;

@@ -1,5 +1,5 @@
 
-import { IntroContainer, IntroContent, IntroH1, IntroP,} from './IntroElements'
+import { IntroContainer, IntroContent, IntroH1, IntroP, IntroH2,} from './IntroElements'
 import { motion } from "framer-motion"
 import React from 'react';
 
@@ -8,16 +8,15 @@ const Intro = () => {
   return (
     <IntroContainer id='Intro' className='gradient'>
       <IntroContent>
-        <motion.div
-          animate={{ x: [-600, 0] }}
-          transition={{ duration: 2 }}>
-          <IntroH1 id='name'> Alexander Nerz</IntroH1>
-        </motion.div>
-        <motion.div
-          animate={{ x: [600, 0] }}
+        <IntroH2>Hi, I'm <motion.div
+          animate={{ x: [-1200, 0] }}
           transition={{ duration: 1 }}>
-          <IntroP>Full Stack Developer</IntroP>
-        </motion.div>
+          <IntroH1 id='name'>Alex<motion.div
+            animate={{ x: [300, 0] }}
+            transition={{ duration: 1.2 }}>
+            <IntroP>Full Stack Developer</IntroP>
+          </motion.div></IntroH1>
+        </motion.div></IntroH2>
       </IntroContent>
     </IntroContainer>
   )
