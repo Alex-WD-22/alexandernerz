@@ -54,7 +54,7 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     cursor: pointer;
     color: #fff;
   } 
@@ -81,7 +81,7 @@ export const NavLinks = styled(LinkS)`
   margin: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  
   &.active {
     color: #000;
     font-weight: bolder;

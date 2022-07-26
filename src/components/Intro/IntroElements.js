@@ -5,13 +5,22 @@ export const IntroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 900px;
   position: relative;
   z-index: 1;
 `;
+export const SoundContainer = styled.div`
+  margin-top: 80px;
+  z-index: 5;
+  position: fixed;
+  overflow: auto;
+  float: right;
+  top: 0;
+  right: 0;
+`
 export const IntroContent = styled.div`
   z-index: 3;
-  max-width: auto;
+  width: auto;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -19,8 +28,11 @@ export const IntroContent = styled.div`
   align-items: center;
 `;
 export const IntroH1 = styled.h1`
-  font-size: 120px;
+  font-size: 190px;
   text-align: center;
+
+  :after       { content:''; }
+  :hover:after { content:'ander Nerz'; }
 
   @media screen and (max-width: 768px) {
     font-size: 100px
@@ -30,18 +42,25 @@ export const IntroH1 = styled.h1`
   }
 `;
 export const IntroH2 = styled.h2`
-  margin-top: 24px;
+  margin-top: 80px;
   color: #000;
-  font-size: 50px;
+  font-size: 90px;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 40px
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 30px
+  }
 `
 export const IntroP = styled.p`
-  margin-top: 24px;
+  margin-top: 14px;
   color: #000;
-  font-size: 50px;
+  font-size: 90px;
   text-align: center;
-  max-width: 600px;
-
+  width: auto;
+  font-weight: bold;
+  margin-bottom: 80px;
   @media screen and (max-width: 768px) {
     font-size: 40px
   }

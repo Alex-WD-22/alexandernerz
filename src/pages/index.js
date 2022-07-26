@@ -7,6 +7,7 @@ import Projects from '../components/Projects';
 import About from "../components/About";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Skills from '../components/Skills';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,6 +23,7 @@ const Home = () => {
       <Intro />
       <About {...homeObjOne} />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </>

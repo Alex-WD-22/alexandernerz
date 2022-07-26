@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 #name {
   font-family: 'Bree Serif', serif;
+  color: #3080e8;
+  
 
 }
 .gradient
@@ -38,4 +40,5 @@
 }
 .underline-hover:hover::before {
   width: 100%;
+  
 }

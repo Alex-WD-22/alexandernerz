@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, rgba(185, 194, 193, 0.747) 0%, rgb(255, 255, 255) 100%);
+  ${'' /* background: linear-gradient(180deg, rgba(185, 194, 193, 0.747) 0%, rgb(255, 255, 255) 100%); */}
  `;
 export const ProjectsWrapper = styled.div`
     max-width: 100%;
@@ -34,7 +34,7 @@ export const ProjectsCard = styled.div`
   align-items: center;
   max-height: 520px;
   padding: 20px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 15px 10px;
   transform:
     perspective(750px)
     translate3d(0px, 0px, -100px)

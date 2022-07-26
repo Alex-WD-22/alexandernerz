@@ -66,6 +66,15 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 2 }}>
+                  <NavLinks to='skills' className='underline-hover'
+                    smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  >Skills</NavLinks>
+                </motion.div>
+              </NavItem>
+              <NavItem>
+                <motion.div
+                  animate={{ y: [-200, 30] }}
+                  transition={{ duration: 2 }}>
                   <NavLinks to='contact' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >Contact</NavLinks>

@@ -6,6 +6,7 @@ const Info = ({ id, imgStart, topLine, description1, description2, description3,
     <>
       <InfoContainer id={id} >
         <InfoWrapper>
+        
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>

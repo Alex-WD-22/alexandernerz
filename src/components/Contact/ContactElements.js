@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-  background: linear-gradient( 0deg, #3080e886, #fff );
   background-size: 200% 200%;
   display: flex; 
   justify-content: center;
@@ -68,7 +67,6 @@ export const ContactLinks = styled.div`
   display: flex;
   flex-direction: row;
   
-
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     column-gap: 20px;
