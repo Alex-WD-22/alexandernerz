@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
+background: #ced4db;
   background-size: 200% 200%;
   display: flex; 
   justify-content: center;

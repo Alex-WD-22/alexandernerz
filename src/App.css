@@ -38,4 +38,5 @@
 }
 .underline-hover:hover::before {
   width: 100%;
+  background: #e4e7eb;
 }

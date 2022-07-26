@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
                   transition={{ duration: 2 }}>
                   <NavLinks to='skills' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                  >Skills</NavLinks>
+                  >My Tools</NavLinks>
                 </motion.div>
               </NavItem>
               <NavItem>

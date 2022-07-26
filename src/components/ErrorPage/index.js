@@ -18,7 +18,7 @@ const ErrorPage = () => {
         <motion.div
           animate={{ x: [800, 0] }}
           transition={{ duration: 1 }}>
-          <ErrorP>I'm sorry, but the page you requestet was not found.</ErrorP>
+          <ErrorP>I'm sorry, but the page you requested was not found.</ErrorP>
           <Stack alignItems="center">
             <Button component={Link} to="/" variant="outlined" startIcon={<ArrowBackIcon />}>
               Go Back

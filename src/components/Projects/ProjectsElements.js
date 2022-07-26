@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  ${'' /* background: linear-gradient(180deg, rgba(185, 194, 193, 0.747) 0%, rgb(255, 255, 255) 100%); */}
+  background: #ced4db;
  `;
 export const ProjectsWrapper = styled.div`
     height: 860px;

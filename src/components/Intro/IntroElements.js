@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
-export const IntroContainer = styled.div`
+export const IntroContainer = styled.div` 
+background: #ced4db;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 900px;
+  height: 950px;
   position: relative;
   z-index: 1;
 `;

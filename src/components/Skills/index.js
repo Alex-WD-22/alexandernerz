@@ -29,11 +29,11 @@ const SimpleCloud = () => {
     return (
         <SkillsContainer id='skills'>
             <SkillsContent>
-                <SkillsH1>Technologies & Tools</SkillsH1>
+                <SkillsH1>My Tools</SkillsH1>
                 <SkillsH2>Front-End:</SkillsH2>
-                <TagCloud minSize={39} maxSize={66} tags={frontEnd} randomSeed={42} />
+                <TagCloud minSize={39} maxSize={69} tags={frontEnd} randomSeed={42} />
                 <SkillsH2>Back-End:</SkillsH2>
-                <TagCloud minSize={39} maxSize={66} tags={backEnd} randomSeed={42} />
+                <TagCloud minSize={39} maxSize={69} tags={backEnd} randomSeed={42} />
             </SkillsContent>
         </SkillsContainer>
 

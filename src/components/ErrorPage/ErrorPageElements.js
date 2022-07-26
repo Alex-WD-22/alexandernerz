@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ErrorContainer = styled.div`
-  background: white;
+  background: #ced4db;
   display: flex;
   justify-content: center;
   align-items: center;
