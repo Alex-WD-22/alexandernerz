@@ -1,6 +1,8 @@
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Subtitle, ImgWrap, Img } from './InfoElements'
 import React from 'react';
 
+
+
 const Info = ({ id, imgStart, topLine, description1, description2, description3, alt, img }) => {
   return (
     <>

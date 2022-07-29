@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const IntroContainer = styled.div` 
-background: #ced4db;
+  background: #ced4db;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,8 @@ export const IntroH2 = styled.h2`
     font-size: 40px
   }
   @media screen and (max-width: 480px) {
-    font-size: 30px
+    font-size: 30px;
+    margin-top: 0px;
   }
 `
 export const IntroP = styled.p`

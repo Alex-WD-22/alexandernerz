@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1500px;
 `;
 export const NavLogo = styled(LinkR) `
   color:#000;
@@ -85,8 +85,6 @@ export const NavLinks = styled(LinkS)`
   &.active {
     color: #000;
     font-weight: bolder;
-    ${'' /* border: 1px solid #333;
-    border-radius: 10%; */}
   }
 `;
 export const Img = styled.img`
