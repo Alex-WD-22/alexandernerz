@@ -1,36 +1,128 @@
-import { ContactContainer, ContactContent, ContactH1, ContactP, ContactLinks } from './ContactElements'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import SendIcon from '@mui/icons-material/Send';
+import { ContactContainer, ContactContent, ContactH1, ContactP, ContactLinks, ContactForm } from './ContactElements'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import React from 'react';
 import Button from '@mui/material/Button';
+import { TextField, Grid, Box } from '@mui/material';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Contact = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const notify = () => {
+    toast.success('Message sent successfully!', {
+
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    toast.promise(
+      emailjs.sendForm('service_rsrfu2c', 'template_dks5vcm', form.current, 'BSQxvUD75e774oglz'),
+      {
+        pending: 'Sending...',
+        success: 'Message sent successfully!',
+        error: 'Something went wrong. Please try again later'
+      }
+    )
+      .then(result => {
+        setName("")
+        setEmail("")
+        setMessage("")
+      })
+  };
 
   return (
     <ContactContainer id='contact'>
       <ContactContent>
         <ContactH1>Get in touch</ContactH1>
         <ContactP style={{ textAlign: "left" }}>
-          If you want to chat — email me or want to know what I'm like to work with? Schedule an event at Calendly.<br />
-          <br />
-          Currently based in Freiburg, Germany — available for work from July 2022.
+          Want to know what it's like to work together? E-mail me or schedule a call at Calendly.
         </ContactP>
-        <ContactLinks>
-          <Button variant="outlined" size="small"
-            sx={{ width: 150, height: 60, margin: 1, }} endIcon={<SendIcon />}
-            to='e.prevent.Default()'
-            onClick={() => window.location = 'mailto:alexander.nerz@web.de'}>EMAIL ME </Button>
-          <a href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon style={{ color: "#3080e8" }} sx={{ fontSize: 75, mx: 4, }} /></a>
-          <Button variant="outlined" size="small"
-            sx={{ width: 150, height: 60, margin: 1, }} endIcon={<ArrowForwardIcon />}
-            href="https://calendly.com/alexander-nerz"
-          >Calendly</Button>
-        </ContactLinks>
+        <ToastContainer position="bottom-right" />
+        <ContactForm ref={form} onSubmit={sendEmail}>
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container rowSpacing={0} columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid TextField xs={2} sm={4} md={6}>
+                <TextField fullWidth margin="dense"
+                  required
+                  type="text"
+                  id="outlined-required"
+                  label="Name"
+                  variant="outlined"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)} />
+              </Grid>
+              <Grid TextField xs={2} sm={4} md={6}>
+                <TextField fullWidth margin="dense"
+                  required
+                  type="email"
+                  id="outlined-required"
+                  label="E-Mail"
+                  variant="outlined"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)} />
+              </Grid> <br />
+              <Grid TextField xs={4} sm={8} md={12}>
+                <TextField fullWidth
+                  required
+                  margin="dense"
+                  type="text"
+                  cols="50"
+                  multiline
+                  rows={4}
+                  resize="none"
+                  maxLength="100"
+                  name="message"
+                  id="outlined-multiline-flexible"
+                  label="Message"
+                  variant="outlined"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)} />
+              </Grid>
+            </Grid>
+          </Box>
+          <ContactLinks>
+            <Button
+              sx={{ width: 150, height: 60, margin: 1, }}
+              type="submit"
+              variant="outlined"
+              endIcon={<MailOutlineIcon style={{ fontSize: 'large' }}></MailOutlineIcon>}
+            >Send Message
+            </Button>
+            <Button variant="outlined" size="small"
+              sx={{ width: 150, height: 60, margin: 1, }} endIcon={<CalendarMonthIcon />}
+              href="https://calendly.com/alexander-nerz"
+            >Calendly</Button>
+            <a href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon style={{ color: "#3080e8" }} sx={{ fontSize: 75, mx: 0, }} /></a>
+          </ContactLinks>
+        </ContactForm>
       </ContactContent>
     </ContactContainer>
   )
 }
 
 export default Contact;
+
+
+
+
+
+
+
 

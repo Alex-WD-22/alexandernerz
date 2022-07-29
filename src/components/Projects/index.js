@@ -12,7 +12,7 @@ const Projects = () => {
       <ProjectsH1>Projects</ProjectsH1>
       <ProjectsWrapper>
         <ProjectsCard>
-          <ProjectsIcon src={Icon1} />
+          <ProjectsIcon src={Icon1} alt="Simply-Math"/>
           <ProjectsH2>Simply-Math</ProjectsH2>
           <ProjectsP>This math game is built with JavaScript, HTML, and CSS. It is an endless game in which the player can solve math equations. If the player clicked the wrong answer they can try again or start over.</ProjectsP>
           <Stack direction="row" spacing={10}>
@@ -21,7 +21,7 @@ const Projects = () => {
           </Stack>
         </ProjectsCard>
         <ProjectsCard>
-          <ProjectsIcon src={Icon2} />
+          <ProjectsIcon src={Icon2} alt="Pet-Sharing" />
           <ProjectsH2>Pet-Sharing</ProjectsH2>
           <ProjectsP>This application has CRUD functionality for pets and users. It was build with Express.js and Handlebars.js. Additionally, it has authentication with session storage and password encryption using bcrypt package.</ProjectsP>
           <Stack direction="row" spacing={10}>
@@ -30,7 +30,7 @@ const Projects = () => {
           </Stack>
         </ProjectsCard>
         <ProjectsCard>
-          <ProjectsIcon src={Icon3} />
+          <ProjectsIcon src={Icon3} alt="Budget-Manager"/>
           <ProjectsH2>Budget-Manager</ProjectsH2>
           <ProjectsP>This MERN application is all about finances. The current balance is always displayed as well as a chart to see a trend in expenses/income. Build with Rest API, Chart.js, and Material-UI.</ProjectsP>
           <Stack direction="row" spacing={10}>

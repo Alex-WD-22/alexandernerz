@@ -33,7 +33,7 @@ const Navbar = ({ toggle }) => {
               animate={{ y: [-200, 6] }}
               transition={{ duration: 2 }}>
               <NavLogo to='/' onClick={toggleHome}>
-                <Img src={Logo3} />
+                <Img alt="coding-sign" src={Logo3} />
               </NavLogo>
             </motion.div>
             <motion.div
@@ -66,9 +66,9 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 2 }}>
-                  <NavLinks to='skills' className='underline-hover'
+                  <NavLinks to='Tech Stack' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                  >My Tools</NavLinks>
+                  >Tech Stack</NavLinks>
                 </motion.div>
               </NavItem>
               <NavItem>
