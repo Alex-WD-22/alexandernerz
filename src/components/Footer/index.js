@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin, } from 'react-icons/fa'
-import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights, Img } from './FooterElements'
+import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';

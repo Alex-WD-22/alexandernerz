@@ -17,19 +17,6 @@ const Contact = () => {
 
   const form = useRef();
 
-  const notify = () => {
-    toast.success('Message sent successfully!', {
-
-      position: "bottom-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-  }
-
   const sendEmail = (e) => {
     e.preventDefault();
     toast.promise(
