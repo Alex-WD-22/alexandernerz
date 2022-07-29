@@ -39,7 +39,7 @@ export const IntroH1 = styled.h1`
     font-size: 100px
   }
   @media screen and (max-width: 480px) {
-    font-size: 60px
+    font-size: 70px
   }
 `;
 export const IntroH2 = styled.h2`
@@ -48,10 +48,10 @@ export const IntroH2 = styled.h2`
   font-size: 90px;
   text-align: center;
   @media screen and (max-width: 768px) {
-    font-size: 40px
+    font-size: 60px
   }
   @media screen and (max-width: 480px) {
-    font-size: 30px;
+    font-size: 45px;
     margin-top: 0px;
   }
 `
@@ -64,9 +64,10 @@ export const IntroP = styled.p`
   font-weight: bold;
   margin-bottom: 80px;
   @media screen and (max-width: 768px) {
-    font-size: 40px
+    font-size: 60px
   }
   @media screen and (max-width: 480px) {
-    font-size: 30px
+    font-size: 45px;
+    margin-bottom: 150px;
   }
 `;

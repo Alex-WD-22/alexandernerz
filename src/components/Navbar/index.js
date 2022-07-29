@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { FaBars } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, Img } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, NavH1} from './NavbarElements'
 import { animateScroll as scroll } from 'react-scroll';
-import Logo3 from "../../images/LogoWhite.png"
 import { motion } from "framer-motion"
 
 const Navbar = ({ toggle }) => {
@@ -33,8 +32,9 @@ const Navbar = ({ toggle }) => {
               animate={{ y: [-200, 6] }}
               transition={{ duration: 2 }}>
               <NavLogo to='/' onClick={toggleHome}>
-                <Img alt="coding-sign" src={Logo3} />
+                <NavH1>&lt;/free4work&gt;</NavH1>
               </NavLogo>
+              
             </motion.div>
             <motion.div
               animate={{ y: [-200, 6] }}

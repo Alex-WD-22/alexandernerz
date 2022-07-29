@@ -48,6 +48,7 @@ const Contact = () => {
               <Grid item xs={2} sm={4} md={6}>
                 <TextField fullWidth margin="dense"
                   required
+                  name="name"
                   type="text"
                   id="outlined-required"
                   label="Name"
@@ -58,6 +59,7 @@ const Contact = () => {
               <Grid item xs={2} sm={4} md={6}>
                 <TextField fullWidth margin="dense"
                   required
+                  name="email"
                   type="email"
                   id="outlined-required"
                   label="E-Mail"
@@ -85,7 +87,7 @@ const Contact = () => {
             </Grid>
           </Box>
           <ContactLinks>
-            <Button
+            <Button className="blob blue"
               sx={{ width: 150, height: 60, margin: 1, }}
               type="submit"
               variant="outlined"

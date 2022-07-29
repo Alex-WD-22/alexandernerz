@@ -32,17 +32,12 @@ const useAudio = url => {
   const Player = ({ url }) => {
     const [playing, toggle] = useAudio(url);
   
-
-
   return (
     <>
-    <motion.div
-          animate={{ x: [100, 0] }}
-          transition={{ duration: 2 }}>
+    
         <SoundContainer>
     <Button  onClick={toggle}>{playing ? <PauseIcon /> : <PlayArrowIcon />}Sound</Button>
   </SoundContainer>
-  </motion.div>
     <IntroContainer id='Intro'>
       <IntroContent>
         <motion.div
