@@ -58,7 +58,7 @@ const Contact = () => {
         <ContactForm ref={form} onSubmit={sendEmail}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container rowSpacing={0} columns={{ xs: 4, sm: 8, md: 12 }}>
-              <Grid TextField xs={2} sm={4} md={6}>
+              <Grid item xs={2} sm={4} md={6}>
                 <TextField fullWidth margin="dense"
                   required
                   type="text"
@@ -68,7 +68,7 @@ const Contact = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)} />
               </Grid>
-              <Grid TextField xs={2} sm={4} md={6}>
+              <Grid item xs={2} sm={4} md={6}>
                 <TextField fullWidth margin="dense"
                   required
                   type="email"
@@ -78,7 +78,7 @@ const Contact = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)} />
               </Grid> <br />
-              <Grid TextField xs={4} sm={8} md={12}>
+              <Grid item xs={4} sm={8} md={12}>
                 <TextField fullWidth
                   required
                   margin="dense"
