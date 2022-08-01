@@ -46,7 +46,8 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
   font-size: 2.5rem;
   color: #000;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+  margin-top: 20px;
   font-weight: bold;
   
   @media screen and (max-width: 768px) {
@@ -73,8 +74,8 @@ export const ImgWrap = styled.div`
   height: 100%;
 `;
 export const Img = styled.img`
-  width: 100%;
-  margin: 0 0 10px 0;
+  width: 90%;
+  margin: 20px 0 10px 15px;
   padding-right: 0;
   border-radius: 50%;
   border: 2px solid #3080e8;
