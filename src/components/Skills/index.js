@@ -25,7 +25,6 @@ const SimpleCloud = () => {
         onClick={tag => alert(`'${tag.value}' was selected!`)}
     />
 
-
     return (
         <SkillsContainer id='Tech Stack'>
             <SkillsContent>
@@ -36,7 +35,6 @@ const SimpleCloud = () => {
                 <TagCloud minSize={39} maxSize={69} tags={backEnd} randomSeed={42} />
             </SkillsContent>
         </SkillsContainer>
-
     )
 
 }

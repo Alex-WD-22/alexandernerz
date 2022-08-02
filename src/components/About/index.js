@@ -1,26 +1,25 @@
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Subtitle, ImgWrap, Img } from './InfoElements'
 import React from 'react';
+import ProfileImg from "../../images/alexanderNerzProfile.jpg"
 
 
-
-const Info = ({ id, imgStart, topLine, description1, description2, description3, alt, img }) => {
+const Info = () => {
   return (
     <>
-      <InfoContainer id={id} >
+      <InfoContainer id='about'>
         <InfoWrapper>
-        
-          <InfoRow imgStart={imgStart}>
+          <InfoRow >
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Subtitle>{description1}</Subtitle>
-                <Subtitle>{description2}</Subtitle>
-                <Subtitle>{description3}</Subtitle>
+                <TopLine>Me, Myself & I</TopLine>
+                <Subtitle>I'm a Junior Full Stack Developer based in Freiburg, Germany. Currently searching for an opportunity to work with a team, a mentor who guides me through best practices and points out my mistakes to become the best version of myself.</Subtitle>
+                <Subtitle>I love innovative, fast-paced, multidisciplinary teams.</Subtitle>
+                <Subtitle>Let's get in contact!</Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img src={ProfileImg} alt='profile-picture' />
               </ImgWrap>
             </Column2>
           </InfoRow>

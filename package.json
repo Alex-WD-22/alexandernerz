@@ -29,6 +29,7 @@
     "styled-components": "^5.3.5",
     "svgo": "^2.8.0",
     "sweetalert2": "^11.4.24",
+    "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
