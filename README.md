@@ -19,12 +19,6 @@ If I'm not in front of my computer, you most likely will find me climbing or rid
 - HTML
 - CSS
 
-### Dependencies
-
-- Material UI
-- Framer-Motion
-- styled-componets
-- react-scroll
 
 ### Demo
 
