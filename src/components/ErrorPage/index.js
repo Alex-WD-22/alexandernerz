@@ -12,7 +12,7 @@ const ErrorPage = () => {
         <ErrorH1 id='error'> 404</ErrorH1>
         <ErrorP>I'm sorry, but the page you requested was not found.</ErrorP>
         <Stack alignItems="center">
-          <Button component={Link} to="/" variant="outlined" startIcon={<ArrowBackIcon />}>
+          <Button variant="contained" sx={{ fontSize: '29px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} component={Link} to="/"  startIcon={<ArrowBackIcon />}>
             Go Back
           </Button>
         </Stack>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SkillsContainer = styled.div`
-  background: #e6eeed;
+  background: #eaf1f1;
   background-size: 200% 200%;
   display: flex; 
   justify-content: center;

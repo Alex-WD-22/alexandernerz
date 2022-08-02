@@ -15,7 +15,7 @@ const Projects = () => {
           <ProjectsIcon src={Icon1} alt="Simply-Math" />
           <ProjectsH2>Simply-Math</ProjectsH2>
           <ProjectsP>This math game is built with JavaScript, HTML, and CSS. It is an endless game in which the player can solve math equations. If the player clicked the wrong answer they can try again or start over.</ProjectsP>
-          <Stack direction="row" spacing={10}>
+          <Stack direction="row" spacing={8}>
             <Button variant="contained" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} href="https://alex-wd-22.github.io/Simply-Math/">Demo</Button>
             <Button variant="contained" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} href="https://github.com/Alex-WD-22/Simply-Math">GitHub</Button>
           </Stack>
@@ -24,7 +24,7 @@ const Projects = () => {
           <ProjectsIcon src={Icon2} alt="Pet-Sharing" />
           <ProjectsH2>Pet-Sharing</ProjectsH2>
           <ProjectsP>This application has CRUD functionality for pets and users. It was build with Express.js and Handlebars.js. Additionally, it has authentication with session storage and password encryption using bcrypt package.</ProjectsP>
-          <Stack direction="row" spacing={10}>
+          <Stack direction="row" spacing={8}>
             <Button variant="contained" size="large" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} href="https://pet-sharing.herokuapp.com/">Demo</Button>
             <Button variant="contained" size="large" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} href="https://github.com/FreiburgDevTeam/crud-project">GitHub</Button>
           </Stack>
@@ -33,7 +33,7 @@ const Projects = () => {
           <ProjectsIcon src={Icon3} alt="Budget-Manager" />
           <ProjectsH2>Budget-Manager</ProjectsH2>
           <ProjectsP>This MERN application is all about finances. The current balance is always displayed as well as a chart to see a trend in expenses/income. Build with Rest API, Chart.js, and Material-UI.</ProjectsP>
-          <Stack direction="row" spacing={10}>
+          <Stack direction="row" spacing={8}>
             <Button variant="contained" size="large" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} href="https://budget-manager-mern-app.netlify.app/">Demo</Button>
             <Button variant="contained" size="large" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }} href="https://github.com/FreiburgDevTeam/mern-application-client">GitHub</Button>
           </Stack>

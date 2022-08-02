@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const IntroContainer = styled.div` 
-background: #e6eeed;
+background: #eaf1f1;
   display: flex;
   justify-content: center;
   align-items: center;

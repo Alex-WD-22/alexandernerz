@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
- background: #e6eeed;
+ background: #eaf1f1;
 `;
 export const InfoWrapper = styled.div`
   display: grid;

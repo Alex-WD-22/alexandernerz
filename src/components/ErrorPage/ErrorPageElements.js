@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ErrorContainer = styled.div`
-  background: #ced4db;
+  background: #264653;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ export const ErrorContent = styled.div`
   align-items: center;
 `;
 export const ErrorH1 = styled.h1`
-  color: black;
+  color: #E76F51;
   font-size: 200px;
   text-align: center;
 
@@ -33,7 +33,7 @@ export const ErrorH1 = styled.h1`
 `;
 export const ErrorP = styled.p`
   margin-top: 24px;
-  color: #000;
+  color: #E9C46A;
   font-size: 50px;
   text-align: center;
   max-width: 600px;
