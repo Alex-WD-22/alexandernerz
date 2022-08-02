@@ -21,3 +21,6 @@ const Sidebar = ({ isOpen, toggle }) => {
 }
 
 export default Sidebar;
+
+
+// fill='#E9C46A' stroke='#E9C46A' style="color: #E9C46A"?

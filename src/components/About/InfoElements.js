@@ -55,7 +55,7 @@ export const TopLine = styled.p`
     font-size: 50px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 39px;
+    font-size: 37px;
   }
 `;
 export const Subtitle  = styled.p`
@@ -82,5 +82,5 @@ export const Img = styled.img`
   margin: 20px 0 10px 15px;
   padding-right: 0;
   border-radius: 50%;
-  border: 2px solid #264653;
+  border: 4px solid #264653;
 `;

@@ -72,6 +72,7 @@ export const ContactLinks = styled.div`
   display: flex;
   flex-direction: row;
   justify-Content: center;
+  margin-top: 20px;
   
   @media screen and (max-width: 480px) {
     flex-direction: column;

@@ -55,7 +55,7 @@ export const Column1 = styled.div`
   }
 `;
 export const Column2 = styled.div`
-  margin: 0px 0px 230px 25px;
+  margin: 0px 0px 230px 50px;
   padding: 0 15px;
   grid-area: col2;
   @media screen and (max-width: 768px) {
@@ -70,17 +70,19 @@ export const SkillsH1 = styled.h1`
     color: #264653;
     margin-bottom: 15px;
     font-weight: bold;
-  @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     font-size: 37px;
   }
   `
 export const SkillsH2 = styled.h2`
-    font-size: 45pxpx;
+    font-size: 45px;
     color: #264653;
-    margin: 15px;
+    margin: 15px 0px 15px 0px;
+    text-algin: center;
 
   @media screen and (max-width: 480px) {
-    font-size: 27px;
+    font-size: 25px;
+    margin: 15px 0px 15px 35px;
   }
 `
 export const SkillDiv =styled.div`

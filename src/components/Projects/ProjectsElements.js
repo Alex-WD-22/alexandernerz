@@ -63,6 +63,10 @@ export const ProjectsH1 = styled.h1`
   color: #264653;
   margin-bottom: 22px;
   margin-top: 64px; 
+
+  @media screen and (max-width: 480px) {
+    font-size: 37px;
+  }
 `;
 export const ProjectsH2 = styled.h2`
   font-size: 34px;
