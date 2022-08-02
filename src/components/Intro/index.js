@@ -9,6 +9,8 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import { Link } from 'react-scroll';
+
+
 const useAudio = url => {
   const [audio] = useState(new Audio(Sound));
   const [playing, setPlaying] = useState(false);
@@ -36,7 +38,7 @@ const Player = ({ url }) => {
   return (
     <>
       <SoundContainer>
-        <Button onClick={toggle}>{playing ? <PauseIcon /> : <PlayArrowIcon />}Sound</Button>
+        <Button style={{color: '#E76F51'}} onClick={toggle}>{playing ? <PauseIcon /> : <PlayArrowIcon />}Sound</Button>
       </SoundContainer>
       <IntroContainer id='Intro'>
         <IntroContent>
@@ -65,7 +67,7 @@ const Player = ({ url }) => {
             <ArrowCircleDownIcon
               fontSize="large"
               sx={{mb: '90px'}}
-              style={{ pointerEvents: 'fill', cursor: 'pointer', color: '#3080e8' }} />
+              style={{ pointerEvents: 'fill', cursor: 'pointer', color: '#2A9D8F' }} />
           </Link>
         </IntroContent>
       </IntroContainer>

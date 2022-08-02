@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const IntroContainer = styled.div` 
-  background: #ced4db;
+background: #e6eeed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@ export const IntroH1 = styled.h1`
 `;
 export const IntroH2 = styled.h2`
   margin-top: 80px;
-  color: #000;
+  color: #264653;
   font-size: 90px;
   text-align: center;
   @media screen and (max-width: 768px) {
@@ -57,7 +57,7 @@ export const IntroH2 = styled.h2`
 `
 export const IntroP = styled.p`
   margin-top: 14px;
-  color: #000;
+  color: #264653;
   font-size: 90px;
   text-align: center;
   width: auto;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
- background: #fff;
+ background: #e6eeed;
 `;
 export const InfoWrapper = styled.div`
   display: grid;
@@ -44,14 +44,18 @@ export const TextWrapper = styled.div`
   padding-bottom: px;
 `;
 export const TopLine = styled.p`
-  font-size: 2.5rem;
-  color: #000;
+  font-size: 60px;
+  color: #264653;
   margin-bottom: 40px;
   margin-top: 20px;
-  font-weight: bold;
+  font-weight: bolder;
   
   @media screen and (max-width: 768px) {
     text-align: center;
+    font-size: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 39px;
   }
 `;
 export const Subtitle  = styled.p`
@@ -78,5 +82,5 @@ export const Img = styled.img`
   margin: 20px 0 10px 15px;
   padding-right: 0;
   border-radius: 50%;
-  border: 2px solid #3080e8;
+  border: 2px solid #264653;
 `;

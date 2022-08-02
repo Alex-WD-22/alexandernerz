@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const SkillsContainer = styled.div`
-  background: #fff;
+  background: #e6eeed;
   background-size: 200% 200%;
   display: flex; 
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 0 30px;
   height: 860px;
   position: relative;
@@ -32,23 +33,68 @@ export const SkillsContent = styled.div`
     width: 300px;
   }
 `;
+export const SkillColumn = styled.div`
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+  }
+`;
+export const Column1 = styled.div`
+  margin: 0px 25px 15px 0px;
+  padding: 0 15px;
+  grid-area: col1;
+  @media screen and (max-width: 768px) {
+    margin: 0px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0px;
+  }
+`;
+export const Column2 = styled.div`
+  margin: 0px 0px 230px 25px;
+  padding: 0 15px;
+  grid-area: col2;
+  @media screen and (max-width: 768px) {
+    margin: 0px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0px;
+  }
+`;
 export const SkillsH1 = styled.h1`
     font-size: 60px;
-    color: #000;
+    color: #264653;
     margin-bottom: 15px;
     font-weight: bold;
-
   @media screen and (max-width: 480px) {
     font-size: 37px;
   }
   `
 export const SkillsH2 = styled.h2`
     font-size: 45pxpx;
-    color: #000;
+    color: #264653;
     margin: 15px;
-    
 
   @media screen and (max-width: 480px) {
     font-size: 27px;
+  }
+`
+export const SkillDiv =styled.div`
+  color: #2A9D8F;
+  font-size: 45px;
+  padding: 5px;
+  
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 36px;
+    margin: 0px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 33px;
+    margin: 0px;
   }
 `

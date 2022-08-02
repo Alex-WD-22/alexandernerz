@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-background: #ced4db;
+  background: #e6eeed;
   background-size: 200% 200%;
   display: flex; 
   justify-content: center;
@@ -20,7 +20,7 @@ export const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
+  background: #f0eee8;
   border: 1px solid rgba(228, 226, 226, 0.411);;
   box-shadow:  0 70px 40px -20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -44,7 +44,7 @@ export const ContactRow = styled.div`
 `
 export const ContactH1 = styled.h1`
   font-size: 2.5rem;
-  color: #000;
+  color: #264653;
   margin-bottom: 10px;
   font-weight: bold;
 

@@ -47,10 +47,17 @@ const Contact = () => {
             <Grid container rowSpacing={0} columns={{ xs: 4, sm: 8, md: 12 }}>
               <Grid item xs={2} sm={4} md={6}>
                 <TextField fullWidth margin="dense"
+                  sx={{
+                    "& .MuiInputLabel-root": { color: '#264653' }, "& .MuiOutlinedInput-root.Mui-focused": {
+                      "& > fieldset": {
+                        borderColor: "#264653"
+                      }
+                    }
+                  }}
                   required
                   name="name"
                   type="text"
-                  id="outlined-required"
+                  id="outlined1"
                   label="Name"
                   variant="outlined"
                   value={name}
@@ -58,10 +65,17 @@ const Contact = () => {
               </Grid>
               <Grid item xs={2} sm={4} md={6}>
                 <TextField fullWidth margin="dense"
+                  sx={{
+                    "& .MuiInputLabel-root": { color: '#264653' }, "& .MuiOutlinedInput-root.Mui-focused": {
+                      "& > fieldset": {
+                        borderColor: "#264653"
+                      }
+                    }
+                  }}
                   required
                   name="email"
                   type="email"
-                  id="outlined-required"
+                  id="outlined2"
                   label="E-Mail"
                   variant="outlined"
                   value={email}
@@ -69,6 +83,13 @@ const Contact = () => {
               </Grid> <br />
               <Grid item xs={4} sm={8} md={12}>
                 <TextField fullWidth
+                  sx={{
+                    "& .MuiInputLabel-root": { color: '#264653' }, "& .MuiOutlinedInput-root.Mui-focused": {
+                      "& > fieldset": {
+                        borderColor: "#264653"
+                      }
+                    }
+                  }}
                   required
                   margin="dense"
                   type="text"
@@ -88,17 +109,16 @@ const Contact = () => {
           </Box>
           <ContactLinks>
             <Button className="blob blue"
-              sx={{ width: 150, height: 60, margin: 1, }}
+              variant="contained" sx={{ width: 150, height: 60, margin: 1, fontSize: '16px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }}
               type="submit"
-              variant="outlined"
-              endIcon={<MailOutlineIcon style={{ fontSize: 'large' }}></MailOutlineIcon>}
+              endIcon={<MailOutlineIcon></MailOutlineIcon>}
             >Send Message
             </Button>
-            <Button variant="outlined" size="small"
-              sx={{ width: 150, height: 60, margin: 1, }} endIcon={<CalendarMonthIcon />}
+            <Button variant="contained" sx={{ width: 150, height: 60, margin: 1, fontSize: '16px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': { backgroundColor: '#fff', color: '#264653' } }}
+              endIcon={<CalendarMonthIcon />}
               href="https://calendly.com/alexander-nerz"
             >Calendly</Button>
-            <a href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon style={{ color: "#3080e8" }} sx={{ fontSize: 75, mx: 0, }} /></a>
+            <a href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon style={{ backgroundColor: "#264653", borderRadius: '10%' }} sx={{ fontSize: 62, mt: '7px', ml: '8px', fill: "#E9C46A" }} /></a>
           </ContactLinks>
         </ContactForm>
       </ContactContent>
@@ -115,3 +135,4 @@ export default Contact;
 
 
 
+// variant="contained" sx={{ fontSize: '21px', color: '#E9C46A', backgroundColor: '#264653', borderColor: '#E9C46A', '&:hover': {backgroundColor: '#fff', color: '#264653'}}}
