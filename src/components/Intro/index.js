@@ -3,7 +3,7 @@ import { IntroContainer, IntroContent, IntroH1, IntroP, IntroH2, SoundContainer 
 import { motion } from "framer-motion"
 import React from 'react';
 import { useState, useEffect } from "react";
-import Sound from "../../Sound/happy-day-113985.mp3"
+import Sound from "../../Sound/new-happy-day.mp3"
 import { Button } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import PauseIcon from '@mui/icons-material/Pause';

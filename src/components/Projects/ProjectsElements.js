@@ -53,7 +53,7 @@ export const ProjectsCard = styled.div`
 `;
 export const ProjectsIcon = styled.img`
   height: auto;
-  width: 90%;
+  width: 80%;
   margin-bottom: 15px;
   border: 2px solid #264653;
   border-radius: 1%;
