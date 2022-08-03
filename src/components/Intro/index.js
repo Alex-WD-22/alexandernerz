@@ -65,6 +65,7 @@ const Player = ({ url }) => {
             offset={-63}
             duration={500}>
             <ArrowCircleDownIcon
+            tabIndex="-1"
               fontSize="large"
               sx={{mb: '90px'}}
               style={{ pointerEvents: 'fill', cursor: 'pointer', color: '#2A9D8F' }} />
