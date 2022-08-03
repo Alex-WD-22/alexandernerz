@@ -31,7 +31,7 @@ const Navbar = ({ toggle }) => {
             <motion.div
               animate={{ y: [-200, 6] }}
               transition={{ duration: 1 }}>
-              <NavLogo tabIndex="-1" to='/' onClick={toggleHome}>
+              <NavLogo id="main-content" tabIndex="-1" to='/' onClick={toggleHome}>
                 <NavH1>&lt;/free4work&gt;</NavH1>
               </NavLogo>
             </motion.div>
@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 1 }}>
-                  <NavLinks tabIndex="-1" to='about' className='underline-hover'
+                  <NavLinks id="main-content" tabIndex="-1" to='about' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >About</NavLinks>
                 </motion.div>
@@ -56,7 +56,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 1 }}>
-                  <NavLinks tabIndex="-1" to='projects' className='underline-hover'
+                  <NavLinks id="main-content" tabIndex="-1" to='projects' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >Projects</NavLinks>
                 </motion.div>
@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 1 }}>
-                  <NavLinks tabIndex="-1" to='Tech Stack' className='underline-hover'
+                  <NavLinks id="main-content" tabIndex="-1" to='Tech Stack' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >Tech Stack</NavLinks>
                 </motion.div>
@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
                 <motion.div
                   animate={{ y: [-200, 30] }}
                   transition={{ duration: 1 }}>
-                  <NavLinks tabIndex="-1" to='contact' className='underline-hover'
+                  <NavLinks id="main-content" tabIndex="-1" to='contact' className='underline-hover'
                     smooth={true} duration={500} spy={true} exact='true' offset={-80}
                   >Contact</NavLinks>
                 </motion.div>

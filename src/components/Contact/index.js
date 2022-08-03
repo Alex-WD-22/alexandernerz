@@ -118,7 +118,7 @@ const Contact = () => {
               endIcon={<CalendarMonthIcon />}
               href="https://calendly.com/alexander-nerz"
             >Calendly</Button>
-            <a href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon aria-label="LinkedIn-Logo" style={{ backgroundColor: "#264653", borderRadius: '10%' }} sx={{ fontSize: 62, mt: '7px', ml: '8px', fill: "#E9C46A" }} /></a>
+            <a aria-label="LinkedIn-Logo" href='https://www.linkedin.com/in/alexander-nerz'><LinkedInIcon aria-label="LinkedIn-Logo" style={{ backgroundColor: "#264653", borderRadius: '10%' }} sx={{ fontSize: 62, mt: '7px', ml: '8px', fill: "#E9C46A" }} /></a>
           </ContactLinks>
         </ContactForm>
       </ContactContent>
