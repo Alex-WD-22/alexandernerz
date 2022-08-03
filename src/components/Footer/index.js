@@ -15,7 +15,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to='/' onClick={toggleHome}><KeyboardDoubleArrowUpIcon sx={{ fontSize: "60px" }}/>
+            <SocialLogo aria-label="Arrow-up-move-top" to='/' onClick={toggleHome}><KeyboardDoubleArrowUpIcon sx={{ fontSize: "60px" }}/>
             </SocialLogo>
             <SocialIcons>
               <SocialIconLink href='https://github.com/Alex-WD-22/alexandernerz' target='_blank' aria-label='GitHub'>
