@@ -1,6 +1,6 @@
 import React from 'react'
 import { SkillsContainer, SkillsContent, SkillsH1, SkillsH2, SkillDiv, Column1, Column2, SkillColumn } from './SkillsElements'
-
+import { motion } from "framer-motion";
 
 const SimpleCloud = () => {
 
@@ -14,13 +14,62 @@ const SimpleCloud = () => {
                         <SkillsH2>Front-End:</SkillsH2>
                         <SkillDiv>
                             <ul>
-                                <li>JavaScript</li>
-                                <li>React.js</li>
-                                <li>HTML</li>
-                                <li>Bootstrap</li>
-                                <li>Material-UI </li>
-                                <li>CSS</li>
-                                <li>Handelbars.js</li>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>JavaScript</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>React.js</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>HTML</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>Bootstrap</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>Material-UI </li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>CSS</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>Handelbars.js</li>
+                                </motion.div>
                             </ul>
                         </SkillDiv>
                     </Column1>
@@ -28,9 +77,31 @@ const SimpleCloud = () => {
                         <SkillsH2>Back-End:</SkillsH2>
                         <SkillDiv>
                             <ul>
-                                <li>Express.js</li>
-                                <li>Node.js</li>
-                                <li>MongoDB</li>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>Express.js</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>Node.js</li>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{
+                                        color: "#E9C46A",
+                                        scale: 1.3,
+                                        textShadow: "1px 2px 2px #264653",
+                                    }}>
+                                    <li>MongoDB</li>
+                                </motion.div>
+
                             </ul>
                         </SkillDiv>
                     </Column2>
