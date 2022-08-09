@@ -43,7 +43,7 @@ export const ContactRow = styled.div`
   flex-direction: row;
 `
 export const ContactH1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: 60px;
   color: #264653;
   margin-bottom: 10px;
   font-weight: bold;
