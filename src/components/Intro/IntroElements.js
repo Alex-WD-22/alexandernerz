@@ -8,11 +8,10 @@ background: #eaf1f1;
   padding: 0 30px;
   height: 950px;
   position: relative;
-  z-index: 1;
 `;
 export const SoundContainer = styled.div`
   margin-top: 80px;
-  z-index: 5;
+  z-index: 1;
   position: fixed;
   overflow: auto;
   float: right;
@@ -20,7 +19,6 @@ export const SoundContainer = styled.div`
   right: 0;
 `
 export const IntroContent = styled.div`
-  z-index: 3;
   width: auto;
   position: absolute;
   padding: 8px 24px;

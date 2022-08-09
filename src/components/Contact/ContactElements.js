@@ -9,10 +9,8 @@ export const ContactContainer = styled.div`
   padding: 0 30px;
   height: 860px;
   position: relative;
-  z-index: 1;
 `;
 export const ContactContent = styled.div`
-  z-index: 3;
   position: absolute;
   padding: 8px 24px;
   height: 550px;

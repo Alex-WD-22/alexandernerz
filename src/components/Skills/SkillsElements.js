@@ -10,10 +10,8 @@ export const SkillsContainer = styled.div`
   padding: 0 30px;
   height: 860px;
   position: relative;
-  z-index: 1;
 `;
 export const SkillsContent = styled.div`
-  z-index: 3;
   position: absolute;
   padding: 8px 24px;
   display: flex;

@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 999;
+  z-index: 2;
   width: 100%;
   height: 100%;
   background: #264653;
@@ -15,11 +15,9 @@ export const SidebarContainer = styled.aside`
   transition: 0.5s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-  
 `;
 export const CloseIcon = styled(FaTimes)`
   color: #E76F51;
-  
 `;
 export const Icon = styled.div`
   position: absolute;
@@ -30,12 +28,9 @@ export const Icon = styled.div`
   cursor: pointer;
   outline: none;
   color: #E9C46A;
-  
-  
 `;
 export const SidebarWrapper = styled.div`
   color: #E9C46A;
-  
 `;
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -43,7 +38,6 @@ export const SidebarMenu = styled.ul`
   grid-template-rows: repeat(6, 80px);
   text-align: center;
   
-
   @media  screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
   }
