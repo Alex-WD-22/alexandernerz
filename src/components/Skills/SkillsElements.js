@@ -66,7 +66,7 @@ export const Column2 = styled.div`
 export const SkillsH1 = styled.h1`
     font-size: 60px;
     color: #264653;
-    margin-bottom: 15px;
+    margin: 22px 0px 22px 0px;
     font-weight: bold;
     @media screen and (max-width: 480px) {
     font-size: 37px;

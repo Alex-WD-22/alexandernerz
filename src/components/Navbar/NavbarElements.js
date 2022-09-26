@@ -77,6 +77,7 @@ export const NavLinks = styled(LinkS)`
   margin: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-size: larger;
   
   &.active {
     text-decoration: line-through;
@@ -90,7 +91,7 @@ export const Img = styled.img`
 `;
 export const NavH1 = styled.h1`
   color: #E9C46A;
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 18px;
   font-weight: normal;
   

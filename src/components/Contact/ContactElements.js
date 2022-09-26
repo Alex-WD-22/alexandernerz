@@ -22,6 +22,7 @@ export const ContactContent = styled.div`
   border: 1px solid rgba(228, 226, 226, 0.411);;
   box-shadow:  0 70px 40px -20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  border: 2px solid #264653;
   
   @media screen and (max-width: 768px) {
     height: 500px;

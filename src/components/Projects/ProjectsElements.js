@@ -36,11 +36,11 @@ export const ProjectsCard = styled.div`
   align-items: center;
   max-height: auto;
   padding: 15px;
-  margin: 0px 2px 10px 2px;
+  margin: 0px 2px 15px 2px;
   transform:
-    perspective(750px)
+    perspective(550px)
     translate3d(0px, 0px, -100px)
-    rotateX(7deg)
+    rotateX(4deg)
     scale(0.9, 0.9);
   border-radius: 20px;
   border: 4px solid #264653;
@@ -48,7 +48,7 @@ export const ProjectsCard = styled.div`
   transition: 0.4s ease-in-out transform;
 
   &:hover {
-    transform: translate3d(0px, 0px, -250px);
+    transform: translate3d(0px, 50px, -50px);
   }
 `;
 export const ProjectsIcon = styled.img`
@@ -61,7 +61,7 @@ export const ProjectsIcon = styled.img`
 export const ProjectsH1 = styled.h1`
   font-size: 60px;
   color: #264653;
-  margin-bottom: 22px;
+  margin-bottom: 0px;
   margin-top: 64px; 
 
   @media screen and (max-width: 480px) {
