@@ -1,6 +1,6 @@
 import React from 'react'
-import Icon1 from '../../images/Simply-Math.webp'
-import Icon2 from '../../images/petsharing-demo.webp'
+import Icon1 from '../../images/Simply-Math_1.png'
+import Icon2 from '../../images/petsharing-demo.png'
 import Icon3 from '../../images/Budget Manager.PNG'
 import {ProjectsContainer, ProjectsH1, ProjectsWrapper, ProjectsCard, ProjectsIcon, ProjectsH2, ProjectsP} from './ProjectsElements'
 import Stack from '@mui/material/Stack';

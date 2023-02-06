@@ -1,6 +1,6 @@
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Subtitle, ImgWrap, Img } from './InfoElements'
 import React from 'react';
-import ProfileImg from "../../images/alexanderNerzProfile.webp"
+import ProfileImg from "../../images/alexanderNerzProfile.png"
 
 
 const Info = () => {

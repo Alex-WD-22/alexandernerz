@@ -70,6 +70,7 @@ const SimpleCloud = () => {
                                     }}>
                                     <li>Handelbars.js</li>
                                 </motion.div>
+                                
                             </ul>
                         </SkillDiv>
                     </Column1>

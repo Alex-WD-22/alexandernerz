@@ -4,7 +4,7 @@ Hi :wave:,
 
 and Welcome to my Portfolio source code.
 
-![Portfolio img](./src/images/WebsiteLIimg.webp)
+![Portfolio img](./src//images//WebsiteLIimg_1.png)
 
 ## About Me
 
